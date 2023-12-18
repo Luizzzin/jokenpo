@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jo-Ken-Po</title>
+</head>
+
+<body>
+    <main>
+        <h1>VOCE</h1>
+        <div id="resultado">
+            <h1 id="mensagem">HAHAHAHA!</h1>
+        </div>
+        <div id="escolha">
+            <h2>Make your move!!!</h2>
+            <div id="jokenpo">
+                <div id="jogadorEscolha1" class="escolhas pedra" onclick="jogar(1)"><img src="imagens/pedra.png" alt="pedra"></div>
+                <div id="jogadorEscolha2" class="escolhas papel" onclick="jogar(2)"><img src="imagens/papel.png" alt="papel"></div>
+                <div id="jogadorEscolha3" class="escolhas tesoura" onclick="jogar(3)"><img src="imagens/tesoura.png" alt="tesoura"></div>
+            </div>
+            <h3 id="PONTOS">PONTOS: <span id="jogadorPontos">0</span></h3>
+        </div>
+    </main>
+
+    <div id="computador">
+        <h1>computador</h1>
+        <div id="resultado">
+            <h1 id="mensagemPc">PRONTO PRA PERDER?</h1>
+        </div>
+        <div id="escolha">
+            <h2>movimento do pc</h2>
+            <div id="jokenpo">
+                <div id="computadorEscolha1" class="escolhas pcPedra"><img src="imagens/pedra.png" alt="pedra"></div>
+                <div id="computadorEscolha2" class="escolhas pcPapel"><img src="imagens/papel.png" alt="papel"></div>
+                <div id="computadorEscolha3" class="escolhas pcTesoura"><img src="imagens/tesoura.png" alt="tesoura"></div>
+            </div>
+            <h3 id="PONTOS">PONTOS: <span id="computadorPontos">0</span></h3>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
